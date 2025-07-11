@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../assets/css/estilos.css">
+  <title>Lumberg | Produtos</title>
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <h1>Lumberg</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="#">Produtos</a>
+      <a href="#">Sobre</a>
+      <a href="#">Contato</a>
+    </nav>
+  </header>
+
+  <!-- Seção Produtos -->
+  <section class="grid-container">
+    <div class="produtos-header">
+      <h2>Todos os Produtos</h2>
+      <select id="ordenar" onchange="ordenarProdutos()">
+        <option value="menor">Menor preço</option>
+        <option value="maior">Maior preço</option>
+      </select>
+    </div>
+    
+    <div class="produtos-grid" id="produtos-grid">
+      <!-- Produtos serão inseridos via JavaScript -->
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="footer-inferior">
+      <div class="footer-coluna">
+        <h4>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="#cbd5e1" viewBox="0 0 24 24" width="18" height="18" style="vertical-align:middle; margin-right:8px;">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zM12 11.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+          </svg>
+          Endereço
+        </h4>
+        <p>Rua Exemplo, 123<br>Cascavel - PR</p>
+      </div>
+      <div class="footer-coluna">
+        <h4>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="#cbd5e1" viewBox="0 0 24 24" width="18" height="18" style="vertical-align:middle; margin-right:8px;">
+            <path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.27 4.27 0 001.88-2.36 8.38 8.38 0 01-2.7 1.03 4.22 4.22 0 00-7.2 3.85A12 12 0 013 5.16a4.21 4.21 0 001.3 5.64 4.17 4.17 0 01-1.9-.53v.05a4.22 4.22 0 003.39 4.14 4.3 4.3 0 01-1.89.07 4.23 4.23 0 003.95 2.92 8.5 8.5 0 01-5.27 1.82A8.59 8.59 0 012 18.13a11.93 11.93 0 006.29 1.84c7.55 0 11.68-6.26 11.68-11.68 0-.18 0-.35-.01-.53A8.36 8.36 0 0022.46 6z"/>
+          </svg>
+          Redes Sociais
+        </h4>
+        <p><a href="#">Instagram</a><br><a href="#">Facebook</a></p>
+      </div>
+      <div class="footer-coluna">
+        <h4>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="#cbd5e1" viewBox="0 0 24 24" width="18" height="18" style="vertical-align:middle; margin-right:8px;">
+            <path d="M6.62 10.79a15.466 15.466 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.21.48 2.53.74 3.88.74a1 1 0 011 1v3.5a1 1 0 01-1 1C9.61 20.91 3.09 14.39 3.09 6a1 1 0 011-1h3.5a1 1 0 011 1c0 1.35.26 2.67.74 3.88a1 1 0 01-.21 1.11l-2.2 2.2z"/>
+          </svg>
+          Contato
+        </h4>
+        <p>contato@lumberg.com.br<br>(45) 99999-9999</p>
+      </div>
+      <div class="formas-pagamento">
+        <h3>Formas de pagamento</h3>
+        <ul>
+          <li><img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa" class="icone" />Visa</li>
+          <li><img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="MasterCard" class="icone" />MasterCard</li>
+          <li><img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="MasterCard" class="icone" /> Pague com dois cartões</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-principal">
+      <p>© 2025 Lumberg. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="produtos.js"></script>
+</body>
+</html>
